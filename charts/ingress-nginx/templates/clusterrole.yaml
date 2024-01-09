@@ -36,6 +36,8 @@ rules:
     verbs:
       - list
       - watch
+      - get
+      - update
 {{- if and .Values.controller.scope.enabled .Values.controller.scope.namespace }}
   - apiGroups:
       - ""
